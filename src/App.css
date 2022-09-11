@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app h1{
+  border : 2px solid #5CA0F2;
+  border-radius: 18px ;
+  color:rgb(0, 66, 97);
+  text-shadow: 2px 2px 4px #ffffff;;
+  padding: 10px 20px;
+  background: linear-gradient(to right ,#08C8F6,#5CA0F2);
+  
+}  
+  .app__searchForm {
+    margin-top: 50px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .app__input {
+    padding: 6px 16px;
+    min-width: 200px;
+    max-width: 100vw;
+    font-size: 15px;
+    border-radius: 5px ;
+    border: 2px solid #fab1a0;
+
   }
-}
+  .app__input:focus{
+    border-radius: 5px ;
+    border: 2px solid #F79B83;
+    background-color: #FBC6B6;
+  }
+  .app__submit {
+    padding: 8px 18px;
+    font-size: 15px;
+    margin-left: 8px;
+    /* background-color: #02aff0 !important; */
+    background: linear-gradient(to right ,#ffc3b1,#ea8685);
+    font-weight: 600;
+
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .app__submit:hover {
+    padding: 8px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 8px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .app__recipes {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    align-items: baseline;
+    gap: 5px;
+    background-color: #FBC6B6 !important;
+    overflow-x:calc();
+    
+  }
